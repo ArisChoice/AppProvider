@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_cream_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_common_header_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10ssp"
+        android:layout_marginRight="@dimen/_10ssp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/no_image_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginTop="@dimen/_10ssp"
+            android:background="@color/color_light_grey_blue"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/add_photo_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTint="@color/color_grey"
+                android:drawableTop="@drawable/shape"
+                android:text="@string/str_cover_image"
+                android:textColor="@color/color_grey"
+                android:textSize="@dimen/_12ssp"
+                android:visibility="visible" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/workspace_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_5sdp"
+                android:visibility="gone">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/with_image_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/banner_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:scaleType="centerCrop"
+                android:layout_weight="1" />
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/change_image_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/camera_blue"
+                android:drawablePadding="@dimen/_10ssp"
+                android:padding="@dimen/_10ssp"
+                android:text="@string/str_change_cover"
+                android:textColor="@color/color_sky_blue" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.app.barber.views.CustomTextView
+        android:id="@+id/continue_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10ssp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@drawable/rectangle_blue_drawable"
+        android:gravity="center"
+        android:padding="@dimen/_10ssp"
+        android:text="@string/str_continue"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/color_white"
+        android:visibility="visible" />
+</LinearLayout>

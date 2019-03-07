@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_appointments"
+        android:icon="@drawable/appoint_selector"
+        android:title="@string/title_dashboard" />
+
+    <item
+        android:id="@+id/navigation_Callouts"
+        android:icon="@drawable/call_selector"
+        android:title="@string/title_Callouts" />
+
+    <item
+        android:id="@+id/navigation_clients"
+        android:icon="@drawable/client_selector"
+        android:title="@string/title_clients" />
+
+    <item
+        android:id="@+id/navigation_Message"
+        android:icon="@drawable/message_selector"
+        android:title="@string/title_Message" />
+    <item
+        android:id="@+id/navigation_more"
+        android:icon="@drawable/more_selector"
+        android:title="@string/title_more" />
+
+</menu>

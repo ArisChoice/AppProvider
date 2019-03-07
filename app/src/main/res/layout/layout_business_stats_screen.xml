@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_cream_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_common_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_business_stats_top" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10ssp"
+                android:background="@drawable/rectangle_white_background"
+                android:elevation="@dimen/_1sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10ssp"
+                    android:layout_marginRight="@dimen/_10ssp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10ssp">
+
+                    <com.app.barber.views.CustomTextView
+                        android:id="@+id/total_appointments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <com.app.barber.views.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lines="2"
+                        android:singleLine="true"
+                        android:text="@string/str_appointments" />
+                </LinearLayout>
+                <!---->
+                <ImageView
+                    android:layout_width="@dimen/_60ssp"
+                    android:layout_height="@dimen/_50ssp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10ssp"
+                    android:layout_marginRight="@dimen/_10ssp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10ssp">
+
+                    <com.app.barber.views.CustomTextView
+                        android:id="@+id/total_views"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="0"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <com.app.barber.views.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:lines="2"
+                        android:singleLine="true"
+                        android:text="@string/str_page_views" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10ssp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_white_background"
+                    android:elevation="@dimen/_1sdp"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10ssp">
+
+                    <com.app.barber.views.CustomTextView
+                        android:id="@+id/total_conversion_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0%"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <com.app.barber.views.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:singleLine="true"
+                        android:text="@string/str_conversion_rate" />
+                </LinearLayout>
+                <!---->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5ssp"
+                    android:layout_marginRight="@dimen/_5ssp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_white_background"
+                    android:elevation="@dimen/_1sdp"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10ssp">
+
+                    <com.app.barber.views.CustomTextView
+                        android:id="@+id/total_response_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0%"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <com.app.barber.views.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:singleLine="true"
+                        android:text="@string/str_response_rate" />
+
+                </LinearLayout>
+                <!---->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_white_background"
+                    android:elevation="@dimen/_1sdp"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10ssp">
+
+                    <com.app.barber.views.CustomTextView
+                        android:id="@+id/total_response_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 min"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <com.app.barber.views.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:singleLine="true"
+                        android:text="@string/str_response_time" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.app.barber.views.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_10ssp"
+                android:layout_marginRight="@dimen/_10ssp"
+                android:text="@string/str_ratings"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/rectangle_white_background"
+                android:elevation="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <com.app.barber.views.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/str_avg_ratings" />
+
+                <include layout="@layout/divider_view_grey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10ssp"
+                    android:layout_marginTop="@dimen/_10ssp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.app.barber.views.CustomTextView
+                        android:id="@+id/ayg_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_10ssp"
+                        android:text="0.0"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/_20sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/_10ssp"
+                        android:paddingRight="@dimen/_10ssp">
+
+                        <RatingBar
+                            android:id="@+id/ratingbar_avg_rate"
+                            style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="5"
+                            android:progressTint="@color/color_yellow" />
+
+                        <com.app.barber.views.CustomTextView
+                            android:id="@+id/avg_rate_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0 Ratings" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include layout="@layout/barber_rating_skills_service_view" />
+
+                <include layout="@layout/divider_view_grey" />
+
+                <include layout="@layout/layout_progress_bars_ratings" />
+
+
+            </LinearLayout>
+
+            <include layout="@layout/layout_business_stat_ratings" />
+
+            <com.app.barber.views.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_10ssp"
+                android:layout_marginRight="@dimen/_10ssp"
+                android:text="@string/str_super_barber"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <include layout="@layout/layout_super_barber_criteria" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

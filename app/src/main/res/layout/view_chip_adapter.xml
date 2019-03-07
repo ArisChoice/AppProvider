@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_1sdp"
+    android:background="@drawable/rectangle_grey_border"
+    android:backgroundTint="@color/color_grey_white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/_5sdp">
+
+    <com.app.barber.views.CustomTextView
+        android:id="@+id/service_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10ssp"
+        android:text="Name"
+        android:textColor="@color/color_grey" />
+
+    <ImageView
+        android:id="@+id/remove_icon"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/circular_grey_background"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/cross_copy" />
+</LinearLayout>

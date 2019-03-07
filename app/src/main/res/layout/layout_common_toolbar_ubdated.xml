@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_app_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/left_img"
+            android:layout_width="@dimen/_50ssp"
+            android:layout_height="@dimen/_50ssp"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_10ssp"
+            app:placeholderImage="@drawable/profile_copy"
+            app:roundingBorderWidth="@dimen/_1ssp"
+            app:roundingBorderColor="@color/color_app_background"
+            app:roundAsCircle="true" />
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/txt_title_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/left_img"
+            android:layout_toLeftOf="@+id/notification_view_holder"
+            android:layout_toRightOf="@+id/left_img"
+            android:layout_toStartOf="@+id/notification_view_holder"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="@dimen/_5ssp"
+            android:text="Today"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_14ssp"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/notification_view_holder"
+            android:layout_width="@dimen/_56sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_10ssp">
+
+            <ImageView
+                android:id="@+id/img_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/_10ssp"
+                android:src="@drawable/bell"
+                android:visibility="visible" />
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/notification_ico"
+                android:layout_width="@dimen/_7ssp"
+                android:layout_height="@dimen/_7ssp"
+                android:layout_alignRight="@+id/img_edit"
+                android:layout_marginRight="@dimen/_7ssp"
+                android:layout_marginTop="@dimen/_6ssp"
+                android:visibility="gone"
+                android:background="@drawable/circular_blue_background"
+                android:backgroundTint="@color/color_red" />
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

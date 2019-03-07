@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangle_white_border"
+    android:orientation="vertical"
+    android:padding="@dimen/_10ssp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.app.barber.views.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/_10ssp"
+            android:paddingBottom="@dimen/_10ssp"
+            android:text="@string/str_appointments"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/status_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_green_border"
+            android:paddingLeft="@dimen/_3sdp"
+            android:paddingTop="1dp"
+            android:paddingRight="@dimen/_3sdp"
+            android:paddingBottom="1dp"
+            android:text="@string/str_completed"
+            android:textColor="@color/color_white" />
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/txt_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:text="@string/str_edit"
+            android:textColor="@color/color_grey"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_view_grey" />
+
+    <include layout="@layout/layout_customer_view" />
+
+    <include layout="@layout/layout_booking_info_view" />
+
+    <com.app.barber.views.CustomTextView
+        android:id="@+id/message_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/color_sky_blue"
+        android:textSize="@dimen/_10ssp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5ssp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_grey_border"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/str_cancelled"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/_14ssp" />
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/complete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5ssp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_blue_drawable"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/str_enroute"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_14ssp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

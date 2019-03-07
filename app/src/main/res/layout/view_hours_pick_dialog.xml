@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangle_white_border"
+    android:orientation="vertical"
+    android:padding="@dimen/_5sdp">
+
+    <com.app.barber.views.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10ssp"
+        android:layout_marginRight="@dimen/_10ssp"
+        android:gravity="center"
+        android:padding="@dimen/_5ssp"
+        android:text="@string/str_client_can_book"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/_15ssp" />
+
+    <include layout="@layout/divider_view_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_10ssp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.app.barber.views.WheelView
+            android:id="@+id/wheel_view_one"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp">
+
+        </com.app.barber.views.WheelView>
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/dialog_save_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10ssp"
+            android:background="@drawable/rectangle_blue_drawable"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/str_save"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_13ssp" />
+
+    </LinearLayout>
+
+</LinearLayout>

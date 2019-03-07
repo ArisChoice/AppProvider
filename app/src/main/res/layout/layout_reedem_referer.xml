@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.app.barber.views.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10ssp"
+        android:paddingRight="@dimen/_10sdp"
+        android:text="@string/str_reedem_text"
+        android:textColor="@color/color_grey" />
+
+    <com.app.barber.views.CustomEditText
+        android:id="@+id/refere_code_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/rectangle_grey_border_dashgap"
+        android:focusableInTouchMode="true"
+        android:hint="@string/str_enter_code"
+        android:maxLength="15"
+        android:maxLines="1"
+        android:padding="@dimen/_10ssp"
+        android:singleLine="true"
+        android:textSize="@dimen/_12sdp" />
+
+    <com.app.barber.views.CustomTextView
+        android:id="@+id/apply_referer_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/rectangle_light_grey_drawable"
+        android:enabled="false"
+        android:padding="@dimen/_10ssp"
+        android:text="@string/str_reedem"
+        android:textColor="@color/color_white" />
+</LinearLayout>

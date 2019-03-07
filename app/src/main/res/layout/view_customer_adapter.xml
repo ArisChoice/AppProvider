@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_background_cream_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/client_image"
+            android:layout_width="@dimen/_50ssp"
+            android:layout_height="@dimen/_50ssp"
+            android:padding="@dimen/_5sdp"
+            app:placeholderImage="@drawable/client_copy"
+            app:roundAsCircle="true"
+            app:roundingBorderColor="@color/color_grey_new"
+            app:roundingBorderWidth="@dimen/_1ssp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/client_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_client_name"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/_13ssp" />
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/client_numver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="012345678" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/selected_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/_10ssp"
+            android:src="@drawable/check"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_view_grey" />
+
+</LinearLayout>

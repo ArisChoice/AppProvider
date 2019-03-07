@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_background_cream_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_30ssp"
+        android:visibility="visible">
+
+        <com.app.barber.views.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/str_no_appointment"
+            android:textSize="@dimen/_14ssp" />
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/no_appointments_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5ssp"
+            android:gravity="center"
+            android:maxLines="3"
+            android:paddingLeft="@dimen/_5ssp"
+            android:paddingRight="@dimen/_5ssp"
+            android:text="@string/str_share_your_name_tag"
+            android:textSize="@dimen/_12ssp" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img_no_appointment"
+            android:layout_width="@dimen/_70ssp"
+            android:layout_height="@dimen/_70ssp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/user1_copy"
+            app:roundAsCircle="true" />
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/user_name_no_appointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/str_user_name"
+            android:textColor="@color/color_sky_blue" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

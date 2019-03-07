@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_common_header_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/color_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/type_card_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_75ssp"
+                android:layout_margin="@dimen/_5ssp"
+                android:background="@drawable/rectangle_white_border"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5ssp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5ssp"
+                    android:src="@drawable/card_icon" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.app.barber.views.CustomTextView
+                        android:id="@+id/text_type_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_card"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <com.app.barber.views.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_card_desc"
+                        android:textColor="@color/color_light_grey_blue"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--Type two Layout-->
+            <LinearLayout
+                android:id="@+id/type_cash_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_75ssp"
+                android:layout_margin="@dimen/_5ssp"
+                android:background="@drawable/rectangle_grey_border"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_10ssp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5ssp"
+                    android:src="@drawable/cash_icon" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.app.barber.views.CustomTextView
+                        android:id="@+id/text_type_cash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_cash"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <com.app.barber.views.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_cash_desc"
+                        android:textColor="@color/color_light_grey_blue"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_check_type_two"
+                    android:layout_width="@dimen/_20ssp"
+                    android:layout_height="@dimen/_20ssp"
+                    android:src="@drawable/icon_copy"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <!--Type three layout-->
+            <LinearLayout
+                android:id="@+id/type_both_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_75ssp"
+                android:layout_margin="@dimen/_5ssp"
+                android:background="@drawable/rectangle_grey_border"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_10ssp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5ssp"
+                    android:src="@drawable/cashorcard_icon" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.app.barber.views.CustomTextView
+                        android:id="@+id/text_type_both"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_both"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <com.app.barber.views.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_both_desc"
+                        android:textColor="@color/color_light_grey_blue"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_check_type_three"
+                    android:layout_width="@dimen/_20ssp"
+                    android:layout_height="@dimen/_20ssp"
+                    android:src="@drawable/icon_copy"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/continue_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_20sdp"
+            android:background="@drawable/rectangle_blue_drawable"
+            android:gravity="center"
+            android:padding="@dimen/_10ssp"
+            android:text="@string/str_update"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_14sdp" />
+    </LinearLayout>
+
+
+</LinearLayout>

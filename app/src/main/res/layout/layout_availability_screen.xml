@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_common_toolbar_trans" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_background_cream_white"
+        android:orientation="vertical">
+
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/opening_hrs_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/arrow_right_copy"
+            android:drawableTint="@color/color_grey"
+            android:padding="@dimen/_15ssp"
+            android:text="@string/str_opening_hours"
+            android:textColor="@color/color_black" />
+
+        <!--<ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_15ssp"
+            android:tint="@color/color_grey"
+            android:src="@drawable/arrow_right_copy" />-->
+
+
+        <include layout="@layout/divider_view_grey" />
+        <!---->
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/callout_hours_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/arrow_right_copy"
+            android:padding="@dimen/_15ssp"
+            android:text="@string/str_callout_hours"
+            android:textColor="@color/color_black" />
+
+
+        <include layout="@layout/divider_view_grey" />
+        <!---->
+
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/block_hrs_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/arrow_right_copy"
+            android:drawableTint="@color/color_grey"
+            android:padding="@dimen/_15ssp"
+            android:text="@string/str_block_hours"
+            android:textColor="@color/color_black" />
+
+
+        <include layout="@layout/divider_view_grey" />
+        <!---->
+
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/how_far_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/arrow_right_copy"
+            android:drawableTint="@color/color_grey"
+            android:padding="@dimen/_15ssp"
+            android:text="@string/str_howfar_can"
+            android:textColor="@color/color_black" />
+
+
+        <include layout="@layout/divider_view_grey" />
+    </LinearLayout>
+
+</LinearLayout>

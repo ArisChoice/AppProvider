@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/add_image_btn_lay"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_weight="1"
+        android:background="@color/color_grey_new"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <com.app.barber.views.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/_10ssp"
+            android:drawableTint="@color/color_grey"
+            android:drawableTop="@drawable/camera_white"
+            android:gravity="center"
+            android:text="@string/str_add_images" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/my_style_image"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/rect_blue_border"
+            app:roundBottomEnd="true"
+            app:roundBottomLeft="true"
+            app:roundBottomRight="true"
+            app:roundBottomStart="true"
+            app:roundedCornerRadius="@dimen/_5sdp" />
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/remove_image_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/my_style_image"
+            android:layout_alignRight="@+id/my_style_image"
+            android:background="@color/color_trans_blak"
+            android:gravity="right"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/str_remove"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_10ssp"
+            android:visibility="visible" />
+    </RelativeLayout>
+</LinearLayout>

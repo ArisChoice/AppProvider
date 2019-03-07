@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:attrs="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_cream_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100ssp"
+        android:background="@drawable/head_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25ssp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo_copy" />
+
+        <com.app.barber.views.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_25ssp"
+            android:paddingRight="@dimen/_25ssp"
+            android:paddingTop="@dimen/_10ssp"
+            android:text="@string/str_welcome_to_barber_app"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_14ssp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/color_white"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/welcome_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+
+        <com.rd.PageIndicatorView
+            android:id="@+id/pageIndicatorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/_5sdp"
+            app:piv_animationType="scale"
+            app:piv_dynamicCount="true"
+            app:piv_interactiveAnimation="true"
+            app:piv_selectedColor="@color/color_grey"
+            app:piv_unselectedColor="@color/color_light_grey_blue"
+            app:piv_viewPager="@id/welcome_pager"
+            attrs:piv_padding="10dp"
+            attrs:piv_radius="8dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10ssp">
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/sign_in_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5ssp"
+            android:layout_weight="1"
+            android:background="@drawable/rect_blue_border"
+            android:gravity="center"
+            android:padding="@dimen/_8ssp"
+            android:text="@string/str_sign_in"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/_13ssp" />
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/register_btn_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5ssp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_blue_drawable"
+            android:gravity="center"
+            android:padding="@dimen/_8ssp"
+            android:text="@string/str_register"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_13ssp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

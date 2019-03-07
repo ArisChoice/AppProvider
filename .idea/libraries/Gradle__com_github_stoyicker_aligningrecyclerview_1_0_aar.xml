@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.stoyicker:aligningrecyclerview:1.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/aligningrecyclerview-1.0.aar/be680a5ee047cdd72d795e1436688899/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/aligningrecyclerview-1.0.aar/be680a5ee047cdd72d795e1436688899/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/aligningrecyclerview-1.0.aar/be680a5ee047cdd72d795e1436688899/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.stoyicker/aligningrecyclerview/1.0/ebe1f29b736c725bf6dcaf63b1d5753c010a9000/aligningrecyclerview-1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

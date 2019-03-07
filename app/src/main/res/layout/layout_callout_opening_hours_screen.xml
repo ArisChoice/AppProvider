@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_cream_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_common_header_view" />
+
+    <include layout="@layout/divider_view_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10ssp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_common_recyclay_view" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10ssp"
+        android:layout_marginRight="@dimen/_10ssp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/add_break_hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/add_copy"
+            android:drawablePadding="@dimen/_10ssp"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/str_add_break_hours"
+            android:textColor="@color/colorPrimary" />
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/add_callout_hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/add_copy"
+            android:drawablePadding="@dimen/_10ssp"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/str_add_call_out_hours"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+    <com.app.barber.views.CustomTextView
+        android:id="@+id/continue_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10ssp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@drawable/rectangle_blue_drawable"
+        android:gravity="center"
+        android:padding="@dimen/_10ssp"
+        android:text="@string/str_continue"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/color_white"
+        android:visibility="visible" />
+</LinearLayout>

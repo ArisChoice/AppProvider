@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.app.barber.views.CustomTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_100ssp"
+    android:layout_height="wrap_content"
+    android:background="@color/color_app_background"
+    android:maxLines="1"
+    android:padding="@dimen/_5sdp"
+    android:singleLine="true"
+    android:textColor="@color/color_white">
+
+</com.app.barber.views.CustomTextView>

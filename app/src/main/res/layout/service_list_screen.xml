@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/layout_common_toolbar_trans" />-->
+    <include layout="@layout/layout_common_header_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_background_cream_white"
+        android:orientation="vertical">
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/color_app_background"
+             android:orientation="vertical"
+             android:paddingLeft="@dimen/_10sdp"
+             android:paddingRight="@dimen/_10ssp">
+
+             <com.app.barber.views.CustomTextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="@string/str_your_service"
+                 android:textColor="@color/color_white"
+                 android:textSize="@dimen/_16ssp" />
+
+             <com.app.barber.views.CustomTextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="@dimen/_5ssp"
+                 android:singleLine="true"
+                 android:text="@string/str_you_can_change"
+                 android:textColor="@color/color_light_grey_blue"
+                 android:textSize="@dimen/_10ssp" />
+         </LinearLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10ssp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_common_recyclay_view" />
+
+            <LinearLayout
+                android:id="@+id/add_service_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:background="@drawable/circular_blue_background"
+                    android:gravity="center"
+                    android:padding="@dimen/_15ssp"
+                    android:src="@drawable/add_" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/continue_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/rectangle_blue_drawable"
+            android:gravity="center"
+            android:padding="@dimen/_10ssp"
+            android:text="@string/str_continue"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_14ssp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

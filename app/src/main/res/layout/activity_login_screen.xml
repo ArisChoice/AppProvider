@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground_img"
+    android:orientation="vertical">
+
+    <!--  <include layout="@layout/layout_common_toolbar_trans" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollIndicators="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_60ssp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:padding="@dimen/_5ssp"
+                android:src="@drawable/logo_copy" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <com.app.barber.views.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_10ssp"
+                    android:paddingRight="@dimen/_10ssp"
+                    android:text="@string/str_welcome_back"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/_20sdp" />
+
+                <TextView
+                    style="@style/normal_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_10ssp"
+                    android:paddingRight="@dimen/_10ssp"
+                    android:text="@string/str_wlcome_note"
+                    android:textColor="@color/color_light_grey_blue" />
+            </LinearLayout>
+
+            <include layout="@layout/view_login_fields" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10ssp"
+                android:layout_marginRight="@dimen/_10ssp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/normal_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_dont_have_account"
+                    android:textColor="@color/color_light_grey_blue" />
+
+                <TextView
+                    android:id="@+id/sign_up_btn"
+                    style="@style/normal_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/str_sign_up"
+                    android:textColor="@color/color_sky_blue" />
+            </LinearLayout>
+
+            <!--<include layout="@layout/view_social_buttons" />-->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

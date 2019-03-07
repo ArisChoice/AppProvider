@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="option_images">
+        <item>@drawable/availability_</item>
+        <item>@drawable/my_details</item>
+        <item>@drawable/my_services</item>
+        <item>@drawable/progress</item>
+        <item>@drawable/business_stats</item>
+        <item>@drawable/bolt</item>
+        <item>@drawable/money_11</item>
+        <item>@drawable/rate_copy</item>
+        <item>@drawable/gift</item>
+        <item>@drawable/lock</item>
+        <item>@drawable/headphones_mic</item>
+        <item>@drawable/feedback</item>
+        <item>@drawable/log_out_2</item>
+
+
+    </integer-array>
+    <string-array name="option_names">
+        <item>@string/str_availabliity</item>
+        <item>@string/str_my_details</item>
+        <item>@string/str_my_services</item>
+        <item>@string/str_progress</item>
+        <item>@string/str_business_stats</item>
+        <item>@string/str_setting</item>
+        <item>@string/str_payment_history</item>
+        <item>@string/str_rate_trim_check</item>
+        <item>@string/str_invitation_code</item>
+        <item>@string/str_privacy_terms</item>
+        <item>@string/str_support</item>
+        <item>@string/str_share_feedback</item>
+        <item>@string/str_logout</item>
+
+    </string-array>
+
+    <string-array name="days_names">
+        <item>@string/str_monday</item>
+        <item>@string/str_tuesday</item>
+        <item>@string/str_wednesday</item>
+        <item>@string/str_thursday</item>
+        <item>@string/str_friday</item>
+        <item>@string/str_Saturday</item>
+        <item>@string/str_sunday</item>
+    </string-array>
+
+
+    <string name="str_my_services">My Services</string>
+    <string name="str_business_stats">Business Stats</string>
+    <string name="str_payment_history">Payment History</string>
+</resources>

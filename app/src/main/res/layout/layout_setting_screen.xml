@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_cream_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_common_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/barber_modes_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/scissors_1"
+                android:drawablePadding="@dimen/_10ssp"
+                android:padding="@dimen/_15ssp"
+                android:text="@string/str_barber_modes"
+                android:textColor="@color/color_grey" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/bill"
+                android:drawablePadding="@dimen/_10ssp"
+                android:padding="@dimen/_15ssp"
+                android:src="@drawable/arrow_right_copy"
+                android:tint="@color/color_grey" />
+        </LinearLayout>
+
+        <include layout="@layout/divider_view_grey" />
+        <!---->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/payment_mode_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/bill"
+                android:drawablePadding="@dimen/_10ssp"
+                android:padding="@dimen/_15ssp"
+                android:text="@string/str_payment_method"
+                android:textColor="@color/color_grey" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_15ssp"
+                android:src="@drawable/arrow_right_copy"
+                android:tint="@color/color_grey" />
+        </LinearLayout>
+
+        <include layout="@layout/divider_view_grey" />
+        <!---->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/distric_mode_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/map_gray"
+                android:drawablePadding="@dimen/_10ssp"
+                android:drawableTint="@color/color_grey"
+                android:padding="@dimen/_15ssp"
+                android:text="@string/str_distric_serv"
+                android:textColor="@color/color_grey" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_15ssp"
+                android:src="@drawable/arrow_right_copy"
+                android:tint="@color/color_grey" />
+        </LinearLayout>
+
+        <include layout="@layout/divider_view_grey" />
+        <!---->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/address_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/details_copy"
+                android:drawablePadding="@dimen/_10ssp"
+                android:drawableTint="@color/color_grey"
+                android:padding="@dimen/_15ssp"
+                android:text="@string/str_address_"
+                android:textColor="@color/color_grey" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_15ssp"
+                android:src="@drawable/arrow_right_copy"
+                android:tint="@color/color_grey" />
+        </LinearLayout>
+
+        <include layout="@layout/divider_view_grey" />
+        <!---->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/notification_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/bell_1"
+                android:drawablePadding="@dimen/_10ssp"
+                android:padding="@dimen/_15ssp"
+                android:text="@string/str_notifications"
+                android:textColor="@color/color_grey" />
+
+            <Switch
+                android:id="@+id/notification_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_15ssp" />
+        </LinearLayout>
+
+        <include layout="@layout/divider_view_grey" />
+        <!---->
+        <LinearLayout
+            android:id="@+id/services_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.app.barber.views.CustomTextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/my_services"
+                android:drawablePadding="@dimen/_10ssp"
+                android:padding="@dimen/_15ssp"
+                android:text="@string/str_your_service"
+                android:textColor="@color/color_grey" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_15ssp"
+                android:src="@drawable/arrow_right_copy"
+                android:tint="@color/color_grey" />
+        </LinearLayout>
+
+        <include layout="@layout/divider_view_grey" />
+        <!---->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/currency_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/money_11"
+                android:drawablePadding="@dimen/_10ssp"
+                android:padding="@dimen/_15ssp"
+                android:text="@string/str_currency"
+                android:textColor="@color/color_grey" />
+
+            <Spinner
+                android:id="@+id/currency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_15ssp" />
+        </LinearLayout>
+
+        <include layout="@layout/divider_view_grey" />
+
+        <!---->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/cancellation_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/money_11"
+                android:drawablePadding="@dimen/_10ssp"
+                android:padding="@dimen/_15ssp"
+                android:text="@string/str_cancellation_f"
+                android:textColor="@color/color_grey" />
+
+            <Switch
+                android:id="@+id/cancellation_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_15ssp" />
+        </LinearLayout>
+
+        <include layout="@layout/divider_view_grey" />
+    </LinearLayout>
+
+</LinearLayout>

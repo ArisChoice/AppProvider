@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_cream_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/default_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_10ssp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.app.barber.views.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_10ssp"
+            android:text="@string/str_use_profissional_client_base"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/_16ssp" />
+
+        <com.app.barber.views.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_5ssp"
+            android:text="@string/str_setting_up_your_client"
+            android:textColor="@color/color_grey"
+            android:textSize="@dimen/_12ssp" />
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/user_phone_contact_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10ssp"
+            android:layout_marginLeft="@dimen/_30ssp"
+            android:layout_marginRight="@dimen/_30ssp"
+            android:layout_marginTop="@dimen/_10ssp"
+            android:background="@drawable/rectangle_blue_drawable"
+            android:gravity="center"
+            android:padding="@dimen/_10ssp"
+            android:text="@string/str_use_phone_contacts"
+            android:textColor="@color/color_white"
+            app:textAllCaps="true" />
+
+        <com.app.barber.views.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_5ssp"
+            android:text="@string/str_or"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/_12ssp"
+            app:textAllCaps="true" />
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/create_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10ssp"
+            android:layout_marginLeft="@dimen/_30ssp"
+            android:layout_marginRight="@dimen/_30ssp"
+            android:layout_marginTop="@dimen/_10ssp"
+            android:background="@drawable/rectangle_white_border"
+            android:gravity="center"
+            android:padding="@dimen/_10ssp"
+            android:text="@string/str_create_contact"
+            android:textColor="@color/color_black"
+            app:textAllCaps="true" />
+
+        <com.app.barber.views.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_5ssp"
+            android:text="@string/str_otherwise_you"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/_12ssp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/list_holder_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.app.barber.views.CustomEditText
+            android:id="@+id/serach_customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10ssp"
+            android:background="@drawable/rectangle_white_border"
+            android:backgroundTint="@color/color_grey_white"
+            android:drawableLeft="@drawable/search"
+            android:drawablePadding="@dimen/_10ssp"
+            android:drawableTint="@color/color_grey"
+            android:hint="@string/str_search"
+            android:padding="@dimen/_10ssp"
+            android:textSize="@dimen/_13sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/serach_customer"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/client_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></android.support.v7.widget.RecyclerView>
+
+            <com.viethoa.RecyclerViewFastScroller
+                android:id="@+id/fast_scroller_recycler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp" />
+        </LinearLayout>
+        <!--<include layout="@layout/layout_common_recyclay_view" />-->
+
+        <ImageView
+            android:id="@+id/add_client_fab"
+            android:layout_width="@dimen/_45ssp"
+            android:layout_height="@dimen/_45ssp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/circular_blue_background"
+            android:padding="@dimen/_14ssp"
+            android:src="@drawable/add_" />
+    </RelativeLayout>
+
+</RelativeLayout>

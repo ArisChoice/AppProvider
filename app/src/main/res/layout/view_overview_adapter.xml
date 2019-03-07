@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/default_view"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_56sdp"
+                android:background="@color/color_white"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/color_grey" />
+
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/time_slot"
+                android:layout_width="@dimen/_40ssp"
+                android:layout_height="@dimen/_55ssp"
+                android:layout_gravity="top"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingRight="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:text="9:00 AM"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.001sp"
+            android:layout_height="match_parent"
+            android:background="@color/color_light_grey_blue" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <aligningrecyclerview.AligningRecyclerView
+                android:id="@+id/bookings_recyclar"
+                android:layout_width="@dimen/_500sdp"
+                android:layout_height="wrap_content"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/recycler_view_container"
+                android:layout_width="@dimen/_500sdp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:splitMotionEvents="false"
+                tools:ignore="UnusedAttribute">
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divider_view_grey" />
+    <!--<HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/time_slot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_2sdp"
+                android:text="9:00 AM" />
+
+            <RelativeLayout
+                android:id="@+id/first_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_2sdp">
+
+                <ImageView
+                    android:id="@+id/first_ico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circular_white_background"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/brush" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/second_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_2sdp">
+
+                <ImageView
+                    android:id="@+id/second_ico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circular_white_background"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/brush" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/third_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_2sdp">
+
+                <ImageView
+                    android:id="@+id/third_ico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circular_white_background"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/brush" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fourth_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_2sdp">
+
+                <ImageView
+                    android:id="@+id/fourth_ico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circular_white_background"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/brush" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/five_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_2sdp">
+
+                <ImageView
+                    android:id="@+id/five_ico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circular_white_background"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/brush" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/six_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_2sdp">
+
+                <ImageView
+                    android:id="@+id/six_ico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circular_white_background"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/brush" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/seven_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_2sdp">
+
+                <ImageView
+                    android:id="@+id/seven_ico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circular_white_background"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/brush" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>-->
+</LinearLayout>

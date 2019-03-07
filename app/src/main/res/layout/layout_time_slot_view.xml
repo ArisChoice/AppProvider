@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/slot_View_Lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/_10ssp">
+
+            <com.app.barber.views.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_start"
+                android:textSize="@dimen/_10ssp" />
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/start_hours_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/_15ssp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rotation="135"
+            android:src="@drawable/arrow_top" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/_10ssp">
+
+            <com.app.barber.views.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/str_end"
+                android:textSize="@dimen/_10ssp" />
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/end_hours_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="00:00"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/_15ssp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/remove_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10ssp"
+            android:src="@drawable/trash"
+            android:tint="@color/color_red"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_view_grey" />
+
+
+</LinearLayout>

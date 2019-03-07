@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "553086119882",
+    "firebase_url": "https://trimcheck-barber.firebaseio.com",
+    "project_id": "trimcheck-barber",
+    "storage_bucket": "trimcheck-barber.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553086119882:android:2a28483a82475019",
+        "android_client_info": {
+          "package_name": "com.app.trimcheck.barber"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "553086119882-673eck47ts2er6p9b467m03n3pikqc8a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXBfbosDXt1f_Z0w7XdAPCRhWGHHqGsUQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

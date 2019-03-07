@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangle_white_border"
+    android:orientation="vertical">
+
+    <com.app.barber.views.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_app_background"
+        android:gravity="center"
+        android:text="@string/str_basic_required_data"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold" />
+
+    <com.app.barber.views.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_app_background"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/str_update_remaining"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold" />
+
+    <include layout="@layout/divider_view_grey" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_10ssp">
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/validate_address_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/rectangle_white_border"
+                android:drawableTint="@color/color_green"
+                android:padding="@dimen/_10ssp"
+                android:text="@string/str_Barber_address"
+                android:textSize="@dimen/_12ssp" />
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/validate_working_hours_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/rectangle_white_border"
+                android:drawableTint="@color/color_green"
+                android:padding="@dimen/_10ssp"
+                android:text="@string/str_add_working_hours"
+                android:textSize="@dimen/_12ssp" />
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/validate_callout_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/rectangle_white_border"
+                android:drawableTint="@color/color_green"
+                android:padding="@dimen/_10ssp"
+                android:text="@string/str_add_call_out_hours"
+                android:textSize="@dimen/_12ssp" />
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/validate_district_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/rectangle_white_border"
+                android:drawableTint="@color/color_green"
+
+                android:padding="@dimen/_10ssp"
+                android:text="@string/str_add_districts"
+                android:textSize="@dimen/_12ssp" />
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/validate_service_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/rectangle_white_border"
+                android:drawableTint="@color/color_green"
+                android:padding="@dimen/_10ssp"
+                android:text="@string/str_add_service"
+                android:textSize="@dimen/_12ssp" />
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/validate_barbertype_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/rectangle_white_border"
+                android:drawableTint="@color/color_green"
+                android:padding="@dimen/_10ssp"
+                android:text="@string/str_add_barber_type"
+                android:textSize="@dimen/_12ssp" />
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/validate_paymen_txt_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/rectangle_white_border"
+                android:drawableTint="@color/color_green"
+                android:padding="@dimen/_10ssp"
+                android:text="@string/str_add_payment_type"
+                android:textSize="@dimen/_12ssp" />
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/validate_stripe_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/rectangle_white_border"
+                android:drawableTint="@color/color_green"
+                android:padding="@dimen/_10ssp"
+                android:text="@string/str_stripe_connent"
+                android:textSize="@dimen/_12ssp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.app.barber.views.CustomTextView
+        android:id="@+id/logout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5ssp"
+        android:background="@color/color_app_background"
+        android:gravity="center"
+        android:padding="@dimen/_10ssp"
+        android:text="@string/str_logout"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/_14ssp" />
+
+</LinearLayout>

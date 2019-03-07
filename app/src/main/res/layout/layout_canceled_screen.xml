@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_cream_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_common_toolbar" />
+
+    <include layout="@layout/layout_week_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/canceled_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10ssp"
+            android:layout_marginRight="@dimen/_10ssp"></android.support.v7.widget.RecyclerView>
+
+        <ImageView
+            android:id="@+id/block_floating_btn"
+            android:layout_width="@dimen/_45ssp"
+            android:layout_height="@dimen/_45ssp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/circular_blue_background"
+            android:padding="@dimen/_15ssp"
+            android:src="@drawable/plus_icon_copy" />
+    </RelativeLayout>
+</LinearLayout>

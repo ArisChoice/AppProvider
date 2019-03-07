@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangle_white_background"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/_5ssp"
+    android:paddingLeft="@dimen/_20ssp"
+    android:paddingRight="@dimen/_20sdp"
+    android:paddingTop="@dimen/_5ssp">
+
+    <com.app.barber.views.CustomTextView
+        android:id="@+id/create_appointment_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/general_default_click"
+        android:drawableLeft="@drawable/calendar_create"
+        android:drawablePadding="@dimen/_10ssp"
+        android:drawableTint="@color/color_grey"
+        android:padding="@dimen/_10ssp"
+        android:text="@string/str_create_appointment"
+        android:textColor="@color/color_grey"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold" />
+
+    <com.app.barber.views.CustomTextView
+        android:id="@+id/block_hours_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/general_default_click"
+        android:drawableLeft="@drawable/clock"
+        android:drawablePadding="@dimen/_10ssp"
+        android:drawableTint="@color/color_grey"
+        android:padding="@dimen/_10ssp"
+        android:text="@string/str_block_hours"
+        android:textColor="@color/color_grey"
+        android:textSize="@dimen/_14sdp"
+
+        android:textStyle="bold" />
+
+</LinearLayout>

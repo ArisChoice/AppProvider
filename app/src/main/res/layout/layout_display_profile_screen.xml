@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_common_header_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/default_view"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_20ssp"
+                android:background="@drawable/rectangle_white_background"
+                android:backgroundTint="@color/color_light_grey_white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/_5ssp"
+                android:visibility="visible">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:layout_width="@dimen/_50ssp"
+                    android:layout_height="@dimen/_50ssp"
+                    android:layout_marginTop="@dimen/_10ssp"
+                    android:background="@drawable/user1_copy"
+                    app:roundBottomEnd="true"
+                    app:roundBottomLeft="true"
+                    app:roundBottomRight="true"
+                    app:roundBottomStart="true" />
+
+                <com.app.barber.views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/_10ssp"
+                    android:layout_marginTop="@dimen/_20ssp"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/_10ssp"
+                    android:text="@string/str_add_display_picture" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/selected_view"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_20ssp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/_5ssp"
+                android:visibility="gone">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/selected_image"
+                    android:layout_width="@dimen/_160sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_marginTop="@dimen/_10ssp"
+                    app:roundBottomEnd="true"
+                    app:roundBottomLeft="true"
+                    app:roundBottomRight="true"
+                    app:roundBottomStart="true"
+                    app:roundedCornerRadius="@dimen/_5sdp" />
+
+                <com.app.barber.views.CustomTextView
+                    android:id="@+id/change_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_5ssp"
+                    android:drawableLeft="@drawable/camera_white"
+                    android:drawablePadding="@dimen/_5ssp"
+                    android:drawableTint="@color/color_sky_blue"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/_10ssp"
+                    android:paddingTop="@dimen/_10ssp"
+                    android:text="@string/str_change_display_picture" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/continue_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10ssp"
+            android:background="@drawable/rectangle_blue_drawable"
+            android:gravity="center"
+            android:padding="@dimen/_10ssp"
+            android:text="@string/str_continue"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

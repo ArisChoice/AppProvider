@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_cream_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_common_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/support_chat_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/_15ssp"
+                android:text="@string/str_chat"
+                android:drawableLeft="@drawable/customer_support"
+                android:drawablePadding="@dimen/_10ssp"
+                android:textColor="@color/color_grey" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_15ssp"
+                android:tint="@color/color_grey"
+                android:src="@drawable/arrow_right_copy" />
+        </LinearLayout>
+
+        <include layout="@layout/divider_view_grey" />
+        <!---->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/call_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/_15ssp"
+                android:drawableLeft="@drawable/headphones_mic"
+                android:drawablePadding="@dimen/_10ssp"
+                android:text="@string/str_customer_support"
+                android:textColor="@color/color_grey" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_15ssp"
+                android:tint="@color/color_grey"
+                android:src="@drawable/arrow_right_copy" />
+        </LinearLayout>
+
+        <include layout="@layout/divider_view_grey" />
+        <!---->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.app.barber.views.CustomTextView
+                android:id="@+id/help_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/_15ssp"
+                android:text="@string/str_help"
+                android:drawableLeft="@drawable/support_17"
+                android:drawablePadding="@dimen/_10ssp"
+                android:textColor="@color/color_grey" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_15ssp"
+                android:tint="@color/color_grey"
+                android:src="@drawable/arrow_right_copy" />
+        </LinearLayout>
+
+        <include layout="@layout/divider_view_grey" />
+
+    </LinearLayout>
+
+</LinearLayout>

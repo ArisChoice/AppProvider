@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangle_white_border">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_white_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+
+        <include layout="@layout/layout_common_recyclay_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.app.barber.views.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/str_working_time"
+                android:textColor="@color/color_black" />
+
+            <Switch
+                android:id="@+id/switch_working_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5ssp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_time_slot_view" />
+
+        <LinearLayout
+            android:id="@+id/break_hours_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.app.barber.views.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/str_break_hours"
+                    android:textColor="@color/color_black" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/break_hours_recyclar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/add_break_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/rectangle_grey_border"
+                android:gravity="center">
+
+                <com.app.barber.views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/plus_icon_copy"
+                    android:drawablePadding="@dimen/_10ssp"
+                    android:drawableTint="@color/color_grey"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/str_add_break_hours" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/update_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10ssp"
+            android:background="@drawable/rectangle_blue_drawable"
+            android:gravity="center"
+            android:padding="@dimen/_10ssp"
+            android:text="@string/str_update"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_14ssp" />
+    </LinearLayout>
+</ScrollView>

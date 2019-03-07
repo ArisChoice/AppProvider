@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/color_app_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10ssp"
+        android:background="@drawable/rectangle_grey_background">
+
+        <com.app.barber.views.CustomEditText
+            android:id="@+id/edtxt_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/user_icon"
+            android:drawablePadding="@dimen/_10ssp"
+            android:ems="10"
+            android:focusableInTouchMode="true"
+            android:hint="User Name or Mobile Number"
+            android:inputType="textNoSuggestions"
+            android:lines="1"
+            android:maxLength="50"
+            android:paddingBottom="@dimen/_10ssp"
+            android:paddingLeft="@dimen/_10ssp"
+            android:paddingRight="@dimen/_5ssp"
+            android:paddingTop="@dimen/_10ssp"
+            android:singleLine="true"
+            android:textColor="@color/color_sky_blue"
+            android:textColorHint="@color/color_light_grey_blue"
+            android:textSize="@dimen/_11ssp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10ssp"
+        android:background="@drawable/rectangle_grey_background"
+        android:orientation="horizontal">
+
+        <com.app.barber.views.CustomEditText
+            android:id="@+id/edtxt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/lock_circle"
+            android:drawablePadding="@dimen/_10ssp"
+            android:ems="10"
+            android:focusableInTouchMode="true"
+            android:hint="@string/str_password"
+            android:inputType="textNoSuggestions|textPassword"
+            android:lines="1"
+            android:maxLength="50"
+            android:paddingBottom="@dimen/_10ssp"
+            android:paddingLeft="@dimen/_10ssp"
+            android:paddingRight="@dimen/_5ssp"
+            android:paddingTop="@dimen/_10ssp"
+            android:singleLine="true"
+            android:textColor="@color/color_sky_blue"
+            android:textColorHint="@color/color_light_grey_blue"
+            android:textSize="@dimen/_11ssp" />
+
+        <TextView
+            android:id="@+id/txt_forget_password"
+            style="@style/normal_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10ssp"
+            android:text="@string/str_forgot_"
+            android:textColor="@color/color_sky_blue" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/sign_in_btn"
+        style="@style/normal_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_10ssp"
+        android:background="@drawable/rectangle_blue_drawable"
+        android:gravity="center"
+        android:padding="@dimen/_10ssp"
+        android:text="@string/str_sign_in"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/_14ssp" />
+</LinearLayout>

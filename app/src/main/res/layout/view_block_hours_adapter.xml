@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp">
+
+    <LinearLayout
+        android:id="@+id/slot_View_Lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_white_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10ssp">
+
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/start_hours_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/clock"
+            android:drawablePadding="@dimen/_10ssp"
+            android:drawableTint="@color/color_grey"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:text="00:00"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/_12ssp" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:rotation="135"
+            android:src="@drawable/arrow_top" />
+
+
+        <com.app.barber.views.CustomTextView
+            android:id="@+id/end_hours_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/clock"
+            android:drawablePadding="@dimen/_10ssp"
+            android:drawableTint="@color/color_grey"
+            android:gravity="right"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="00:00"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/_12ssp" />
+
+        <ImageView
+            android:id="@+id/delete_block_hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/general_default_click"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_10ssp"
+            android:paddingRight="@dimen/_10ssp"
+            android:paddingTop="@dimen/_5sdp"
+            android:src="@drawable/trash"
+            android:tint="@color/color_grey" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
